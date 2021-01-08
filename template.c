@@ -5,6 +5,13 @@
 
 int main(int argc, char * argv[])
 {
+
+		// on cache la console au lancement
+		HWND hWnd = GetConsoleWindow();
+		ShowWindow(hWnd, SW_MINIMIZE);
+		ShowWindow(hWnd, SW_HIDE);
+
+
 		int k=0;
 		while(k<10000)				//On alloue 99999 fois un tableau de 100000 caractères que l'on remplit de 6
   	       {
